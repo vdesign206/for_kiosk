@@ -25,7 +25,7 @@ const THUMB_RADIUS = 12;
 /* 갤러리 폰트/타이틀/그리드 공통 상수 (스냅샷/DOM 완전 일치) */
 const CAPTION_FONT = "600 16px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
 const TITLE_TEXT   = "Welcome to Seoul Jungsu Visual Design";
-const TITLE_FONT   = "800 28px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+const TITLE_FONT   = "800 48px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
 const TITLE_TOP    = 40;   // 타이틀 Y 위치
 const TITLE_AREA_H = 96;   // 타이틀 전용 상단 영역(겹침 방지)
 const GRID_GAP     = 24;   // 썸네일 그리드 간격(가로/세로)
@@ -562,7 +562,7 @@ const showThumbOverlay = () => {
     top: `${TITLE_TOP}px`,
     left: "50%",
     transform: "translateX(-50%)",
-    fontSize: "28px",
+    fontSize: "48px",
     fontWeight: "800",
     fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
     color: "#0d1b2a",
