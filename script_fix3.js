@@ -21,7 +21,7 @@ const slides = [
     image: "./images/img02.png"
   },
   {
-    title: "Red Canyon",
+    title: "Bryce Canyon",
     description: "Vibrant red rock formations in a deep canyon.",
     type: "Detail Study",
     field: "desert, canyon, red-rock, landscape",
@@ -29,7 +29,7 @@ const slides = [
     image: "./images/img03.png"
   },
   {
-    title: "Canyon Sign",
+    title: "Grand Canyon",
     description: "A rustic signpost marking a desert trail.",
     type: "Motion Still",
     field: "trail, signpost, desert, rustic",
@@ -53,7 +53,7 @@ const slides = [
     image: "./images/img06.png"
   },
   {
-    title: "City Skyline",
+    title: "San Diego Skyline",
     description: "A dazzling skyline lit up at night.",
     type: "Motion Still",
     field: "city, skyline, lights, urban",
