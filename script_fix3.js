@@ -10,7 +10,7 @@ const slides = [
     type: "Editorial",
     field: "transport, mountain, scenic, sky",
     date: "2025",
-    image: "./images/img01.png"
+    image: "./images/img01.jpg"
   },
   {
     title: "Dino Fight",
@@ -18,7 +18,7 @@ const slides = [
     type: "Editorial",
     field: "dinosaur, battle, prehistoric, wild",
     date: "2025",
-    image: "./images/img02.png"
+    image: "./images/img02.jpg"
   },
   {
     title: "Bryce Canyon",
@@ -26,7 +26,7 @@ const slides = [
     type: "Detail Study",
     field: "desert, canyon, red-rock, landscape",
     date: "2025",
-    image: "./images/img03.png"
+    image: "./images/img03.jpg"
   },
   {
     title: "Grand Canyon",
@@ -34,7 +34,7 @@ const slides = [
     type: "Motion Still",
     field: "trail, signpost, desert, rustic",
     date: "2025",
-    image: "./images/img04.png"
+    image: "./images/img04.jpg"
   },
   {
     title: "Golden Bridge",
@@ -42,7 +42,7 @@ const slides = [
     type: "Motion Still",
     field: "bridge, sunset, architecture, landmark",
     date: "2025",
-    image: "./images/img05.png"
+    image: "./images/img05.jpg"
   },
   {
     title: "Yosemite Valley",
@@ -50,7 +50,7 @@ const slides = [
     type: "Motion Still",
     field: "valley, forest, national park, scenic",
     date: "2025",
-    image: "./images/img06.png"
+    image: "./images/img06.jpg"
   },
   {
     title: "San Diego Skyline",
@@ -58,7 +58,7 @@ const slides = [
     type: "Motion Still",
     field: "city, skyline, lights, urban",
     date: "2025",
-    image: "./images/img07.png"
+    image: "./images/img07.jpg"
   },
 ]
 
