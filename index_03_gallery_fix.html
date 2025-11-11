@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Jungsu Visual Design</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #000;
+  color: #fff;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-weight: 700;
+  line-height: 1;
+}
+p {
+  font-size: 0.95rem;
+}
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.slider-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  z-index: 2;
+  pointer-events: none;
+}
+.slide-title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.slide-description {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.slide-info p {
+  text-transform: uppercase;
+}
+.slide-title h1 {
+  display: flex;
+  justify-content: center;
+  gap: 0.2em;
+}
+.slide-title h1 .word {
+  display: flex;
+}
+.slide-title h1 .char {
+  display: block;
+}
+.char, .line {
+  overflow: hidden;
+}
+.char span, .line span {
+  position: relative;
+  display: inline-block;
+  will-change: transform;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+.pagination .dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+.pagination .dot.active {
+  background: #fff;
+}
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #fff;
+  width: 0%;
+  z-index: 10;
+  transition: width 3s linear;
+}
+
+@media (max-width: 1000px) {
+  .slide-title {
+    top: 50%;
+  }
+  .slide-description {
+    width: 75%;
+    text-align: center;
+    top: unset;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <canvas></canvas>
+        <div class="slider-content">
+            <div class="slide-title">
+                <h1>Cable Car</h1>
+            </div>
+            <div class="slide-description">
+                <p>A scenic cable car ride above the hills.</p>
+                <div class="slide-info">
+                    <p>Type. Editorial</p>
+                    <p>Field. transport, mountain, scenic, sky</p>
+                    <p>Date. 2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.module.js",
+            "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.13.0/index.js",
+            "gsap/SplitText": "https://cdn.jsdelivr.net/npm/gsap@3.13.0/SplitText.js"
+          }
+        }
+    </script>
+    <script type="module" src="script_03_gallery_fix.js"></script>
+</body>
+</html>
